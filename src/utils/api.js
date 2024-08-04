@@ -6,7 +6,7 @@ export const fetchDataFromApi = async (url) => {
         const { data } = await axios.get(process.env.NEXT_PUBLIC_APP_API_URL + url)
         return data;
     } catch (error) {
-        console.log(error);
+        console.log(error); 
         return error;
     }
 }
