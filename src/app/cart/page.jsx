@@ -96,8 +96,8 @@ const Cart = () => {
         <>
             <section className="section cartPage">
                 <div className="container">
-                    <h2 className="hd mb-1">Your Cart</h2>
-                    <p>There are <b className="text-red">{cartData?.length}</b> products in your cart</p>
+                    <h2 className="hd mb-1">Ваша корзина</h2>
+                    <p>В вашей корзине <b className="text-red">{cartData?.length}</b> продукта</p>
 
                     {cartData?.length !== 0 ?
                         <div className="row">

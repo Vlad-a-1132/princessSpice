@@ -54,17 +54,17 @@ const Orders = () => {
                         <table className='table table-striped table-bordered'>
                             <thead className='thead-light'>
                                 <tr>
-                                    <th>Paymant Id</th>
-                                    <th>Products</th>
-                                    <th>Name</th>
-                                    <th>Phone Number</th>
-                                    <th>Address</th>
-                                    <th>Pincode</th>
-                                    <th>Total Amount</th>
-                                    <th>Email</th>
-                                    <th>User Id</th>
-                                    <th>Order Status</th>
-                                    <th>Date</th>
+                                    <th>Идентификатор платежа</th>
+                                    <th>Продукты</th>
+                                    <th>Название</th>
+                                    <th>номер телефона</th>
+                                    <th>адрес</th>
+                                    <th>Почтовый индекс</th>
+                                    <th>Общая сумма</th>
+                                    <th>Email почта</th>
+                                    <th>Id клиента</th>
+                                    <th>Статус заказа</th>
+                                    <th>Дата</th>
                                 </tr>
                             </thead>
 

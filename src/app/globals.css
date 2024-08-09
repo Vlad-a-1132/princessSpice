@@ -780,6 +780,7 @@ nav .navPart2 ul li:hover .submenu {
   width: 100%;
   border-radius: 7px;
   overflow: hidden;
+  border: 4px solid rgb(255 255 255 / 100%) !important;
 }
 
 .homeProducts .banner img {
