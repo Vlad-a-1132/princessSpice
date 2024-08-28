@@ -60,13 +60,13 @@ const Footer = () => {
                                 <div className="row">
                                     <div className="col-md-6">
 
-                                        <p className="text-white mb-1">Остались вопросы или хотите обсудить покупку индивидуально?</p>
-                                        <h3 className="text-white">Свяжитесь с нами</h3>
+                                        <p className="text-white mb-1">Для оптовых покупателй</p>
+                                        <h3 className="text-white">Оптовые закупки от 15.000 рублей</h3>
                                         <p className="text-white mb-1">
-                                            <a href="tel:89938888001" style={{color: ""}} className="link-offset-2 link-underline link-underline-opacity-0">8 (993) 888-80-01</a>
+                                            <a href="tel:89938888001" style={{color: "white"}} className="link-offset-2 link-underline link-underline-opacity-0">8 (993) 888-80-01</a>
                                         </p>
                                         <p className="text-white mb-1">
-                                            <a href="mailto:princessspicekmv@gmail.com" className="link-offset-2 link-underline link-underline-opacity-0">princessspicekmv@gmail.com</a>
+                                            <a href="mailto:princessspicekmv@gmail.com" style={{color: "white"}} className="link-offset-2 link-underline link-underline-opacity-0">princessspicekmv@gmail.com</a>
                                         </p>
                                         {/* <div className="align-items-right d-flex">
                                         <a href="https://wa.me/8908098" className="link-offset-2 link-underline link-underline-opacity-0">
