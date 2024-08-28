@@ -18,6 +18,10 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import ProductModal from "../ProductModal";
 
+import whatsappBudget from '../../assets/images/whatsapp.svg'
+import telegramBudget from '../../assets/images/telegram.svg'
+import Video from "../Video";
+
 const Footer = () => {
 
     const context = useContext(MyContext);
@@ -55,48 +59,70 @@ const Footer = () => {
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-6">
-                                    <p className="text-white mb-1">$20 discount for your first order</p>
-                                    <h3 className="text-white">Join our newsletter and get...</h3>
-                                    <p className="text-light">Join our email subscription now to get updates on<br /> promotions and coupons.</p>
-
-
-                                    <form className="mt-4">
-                                        <IoMailOutline />
-                                        <input type="text" placeholder="Your Email Address" />
-                                        <Button>Subscribe</Button>
-                                    </form>
-
+                                    
+                                    <p className="text-white mb-1">Остались вопросы или хотите обсудить покупку индивидуально?</p>
+                                    <h3 className="text-white">Свяжитесь с нами</h3>
+                                    <p className="text-white mb-1">
+                                        <a href="tel:89938888001" style={{color: ""}} className="link-offset-2 link-underline link-underline-opacity-0">8 (993) 888-80-01</a>
+                                    </p>
+                                    <p className="text-white mb-1">
+                                        <a href="mailto:princessspicekmv@gmail.com" className="link-offset-2 link-underline link-underline-opacity-0">princessspicekmv@gmail.com</a>
+                                    </p>
+                                    {/* <div className="align-items-right d-flex">
+                                        <a href="https://wa.me/8908098" className="link-offset-2 link-underline link-underline-opacity-0">
+                                            <Image
+                                                    src={whatsappBudget}
+                                                    quality={100}
+                                                    priority={true}
+                                                    width={20}
+                                                    className="linkBadget"
+                                            />
+                                        </a>
+                                        <a href="https://t.me/username" className="link-offset-2 link-underline link-underline-opacity-0">
+                                            <Image src={telegramBudget}
+                                                    quality={100}
+                                                    priority={true}
+                                                    width={20}
+                                                    className="linkBadget"
+                                            />
+                                        </a>
+                                    </div> */}
+                                    
                                 </div>
 
+                                {/* <div className="promoVideo">
+                                    <Video src="/promo.mp4" width={400} height={400}/>
+                                </div> */}
+
                                 <div className="col-md-6">
-                                    <Image src={newsLetterImg} alt="image" />
+                                    <Image src={newsLetterImg} alt="image" className="absolute-image" />
                                 </div>
                             </div>
                         </div>
                     </section>
-                    {/* <footer>
+                    <footer>
                         <div className="container">
                             <div className="topInfo row">
-                                <div className="col d-flex align-items-center">
+                                {/* <div className="col d-flex align-items-center">
                                     <span><LuShirt /></span>
                                     <span className="ml-2">Everyday fresh products</span>
-                                </div>
+                                </div> */}
 
 
                                 <div className="col d-flex align-items-center">
                                     <span><TbTruckDelivery /></span>
-                                    <span className="ml-2">Free delivery for order over $70</span>
+                                    <span className="ml-2">Доставка по выгодным ценам</span>
                                 </div>
 
                                 <div className="col d-flex align-items-center">
                                     <span><RiDiscountPercentLine /></span>
-                                    <span className="ml-2">Daily Mega Discounts</span>
+                                    <span className="ml-2">Ежедневные Мега Скидки</span>
                                 </div>
 
 
                                 <div className="col d-flex align-items-center">
                                     <span><CiBadgeDollar /></span>
-                                    <span className="ml-2">Best price on the market</span>
+                                    <span className="ml-2">Лучшие цены</span>
                                 </div>
 
 
@@ -174,7 +200,7 @@ const Footer = () => {
 
 
                             <div className="copyright mt-3 pt-3 pb-3 d-flex">
-                                <p className="mb-0">Copyright 2024. All rights reserved</p>
+                                {/* <p className="mb-0">Copyright 2024. All rights reserved</p> */}
                                 <ul className="list list-inline ml-auto mb-0 socials">
                                     <li className="list-inline-item">
                                         <Link href="/"><FaFacebookF /></Link>
@@ -193,7 +219,7 @@ const Footer = () => {
 
 
                         </div>
-                    </footer> */}
+                    </footer>
                 </>
             }
 

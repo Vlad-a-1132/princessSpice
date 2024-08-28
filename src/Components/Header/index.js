@@ -128,7 +128,7 @@ const Header = () => {
 
 
                                             {
-                                                context.isLogin !== true ? <Link href="/signIn"><Button className="btn-blue btn-round mr-3">Sign In</Button></Link> :
+                                                context.isLogin !== true ? <Link href="/signIn"><Button className="btn-blue btn-round mr-3">Войти</Button></Link> :
                                                     <>
                                                         <Button className='circle mr-3' onClick={handleClick}><FiUser /></Button>
                                                         <Menu

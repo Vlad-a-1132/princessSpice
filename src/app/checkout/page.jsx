@@ -219,13 +219,13 @@ const Checkout = () => {
                             <div className='row mt-3'>
                                 <div className='col-md-6'>
                                     <div className='form-group'>
-                                        <TextField label="Full Name *" variant="outlined" className='w-100' size="small" name="fullName" onChange={onChangeInput} />
+                                        <TextField label="Полное имя *" variant="outlined" className='w-100' size="small" name="fullName" onChange={onChangeInput} />
                                     </div>
                                 </div>
 
                                 <div className='col-md-6'>
                                     <div className='form-group'>
-                                        <TextField label="Country *" variant="outlined" className='w-100' size="small" name="country" onChange={onChangeInput} />
+                                        <TextField label="Страна *" variant="outlined" className='w-100' size="small" name="country" onChange={onChangeInput} />
                                     </div>
                                 </div>
 
@@ -233,52 +233,52 @@ const Checkout = () => {
                             </div>
 
 
-                            <h6>Street address *</h6>
+                            <h6>Улица*</h6>
 
                             <div className='row'>
                                 <div className='col-md-12'>
                                     <div className='form-group'>
-                                        <TextField label="House number and street name" variant="outlined" className='w-100' size="small" name="streetAddressLine1" onChange={onChangeInput} />
+                                        <TextField label="Номер дома и название улицы" variant="outlined" className='w-100' size="small" name="streetAddressLine1" onChange={onChangeInput} />
                                     </div>
 
                                     <div className='form-group'>
-                                        <TextField label="Apartment, suite, unit, etc. (optional)" variant="outlined" className='w-100' size="small" name="streetAddressLine2" onChange={onChangeInput} />
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-                            <h6>Town / City *</h6>
-
-                            <div className='row'>
-                                <div className='col-md-12'>
-                                    <div className='form-group'>
-                                        <TextField label="City" variant="outlined" className='w-100' size="small" name="city" onChange={onChangeInput} />
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <h6>State / County *</h6>
-
-                            <div className='row'>
-                                <div className='col-md-12'>
-                                    <div className='form-group'>
-                                        <TextField label="State" variant="outlined" className='w-100' size="small" name="state" onChange={onChangeInput} />
+                                        <TextField label="Квартира, блок и т. д. (по желанию)" variant="outlined" className='w-100' size="small" name="streetAddressLine2" onChange={onChangeInput} />
                                     </div>
 
                                 </div>
                             </div>
 
 
-                            <h6>Postcode / ZIP *</h6>
+
+                            <h6>Город *</h6>
 
                             <div className='row'>
                                 <div className='col-md-12'>
                                     <div className='form-group'>
-                                        <TextField label="ZIP Code" variant="outlined" className='w-100' size="small" name="zipCode" onChange={onChangeInput} />
+                                        <TextField label="Название города" variant="outlined" className='w-100' size="small" name="city" onChange={onChangeInput} />
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <h6>Регион *</h6>
+
+                            <div className='row'>
+                                <div className='col-md-12'>
+                                    <div className='form-group'>
+                                        <TextField label="Регион" variant="outlined" className='w-100' size="small" name="state" onChange={onChangeInput} />
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <h6>Почтовый индекс *</h6>
+
+                            <div className='row'>
+                                <div className='col-md-12'>
+                                    <div className='form-group'>
+                                        <TextField label="Код города" variant="outlined" className='w-100' size="small" name="zipCode" onChange={onChangeInput} />
                                     </div>
 
                                 </div>
@@ -288,13 +288,13 @@ const Checkout = () => {
                             <div className='row'>
                                 <div className='col-md-6'>
                                     <div className='form-group'>
-                                        <TextField label="Phone Number" variant="outlined" className='w-100' size="small" name="phoneNumber" onChange={onChangeInput} />
+                                        <TextField label="Номер телефона" variant="outlined" className='w-100' size="small" name="phoneNumber" onChange={onChangeInput} />
                                     </div>
                                 </div>
 
                                 <div className='col-md-6'>
                                     <div className='form-group'>
-                                        <TextField label="Email Address" variant="outlined" className='w-100' size="small" name="email" onChange={onChangeInput} />
+                                        <TextField label="Адрес электронной почты" variant="outlined" className='w-100' size="small" name="email" onChange={onChangeInput} />
                                     </div>
                                 </div>
 
@@ -305,13 +305,13 @@ const Checkout = () => {
 
                         <div className='col-md-4'>
                             <div className='card orderInfo'>
-                                <h4 className='hd'>YOUR ORDER</h4>
+                                <h4 className='hd'>ВАШ ЗАКАЗ</h4>
                                 <div className='table-responsive mt-3'>
                                     <table className='table table-borderless'>
                                         <thead>
                                             <tr>
-                                                <th>Product</th>
-                                                <th>Subtotal</th>
+                                                <th>Продукт</th>
+                                                <th>Итого</th>
                                             </tr>
                                         </thead>
 
@@ -357,7 +357,7 @@ const Checkout = () => {
                                 </div>
 
                                 <Button type="submit" className='btn-blue bg-red btn-lg btn-big'
-                                ><IoBagCheckOutline /> &nbsp; Checkout</Button>
+                                ><IoBagCheckOutline /> &nbsp; Оформить</Button>
 
                             </div>
                         </div>

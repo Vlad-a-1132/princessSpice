@@ -127,7 +127,7 @@ const SignIn = () => {
 
 
                     <form className="mt-3" onSubmit={login}>
-                        <h2 className="mb-4">Sign In</h2>
+                        <h2 className="mb-4">Войти</h2>
 
                         <div className="form-group">
                             <TextField id="standard-basic" label="Email" type="email" required variant="standard" className="w-100" name="email" onChange={onchangeInput}/>
@@ -138,7 +138,7 @@ const SignIn = () => {
 
 
 
-                        <a className="border-effect cursor txt">Forgot Password?</a>
+                        <a className="border-effect cursor txt">Забыли пароль?</a>
 
                         <div className="d-flex align-items-center mt-3 mb-3 ">
                             <Button type="submit" className="btn-blue col btn-lg btn-big">
@@ -149,11 +149,11 @@ const SignIn = () => {
                             <Link href="/"> <Button className="btn-lg btn-big col ml-3"  variant="outlined" onClick={()=>context.setisHeaderFooterShow(true)}>Cancel</Button></Link>
                         </div>
 
-                        <p className="txt">Not Registered? <Link href="/signUp" className="border-effect">Sign Up</Link></p>
+                        <p className="txt">Не зарегистрированы? <Link href="/signUp" className="border-effect">Зарегистрироваться</Link></p>
 
-                        <h6 className="mt-4 text-center font-weight-bold">Or continue with social account</h6>
+                        <h6 className="mt-4 text-center font-weight-bold">Или продолжить с социальной учетной записьюt</h6>
 
-                        <Button className="loginWithGoogle mt-2" variant="outlined"><Image src={GoogleImg} /> Sign In with Google</Button>
+                        <Button className="loginWithGoogle mt-2" variant="outlined"><Image src={GoogleImg} /> Войти через Google</Button>
 
                     </form>
 

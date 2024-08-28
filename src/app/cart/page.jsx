@@ -96,8 +96,8 @@ const Cart = () => {
         <>
             <section className="section cartPage">
                 <div className="container">
-                    <h2 className="hd mb-1">Your Cart</h2>
-                    <p>There are <b className="text-red">{cartData?.length}</b> products in your cart</p>
+                    <h2 className="hd mb-1">Ваша корзина</h2>
+                    <p>В вашей корзине <b className="text-red">{cartData?.length}</b> продукта</p>
 
                     {cartData?.length !== 0 ?
                         <div className="row">
@@ -106,11 +106,11 @@ const Cart = () => {
                                     <table className="table">
                                         <thead>
                                             <tr>
-                                                <th width="35%">Product</th>
-                                                <th width="15%">Unit Price</th>
-                                                <th width="25%">Quantity</th>
-                                                <th width="15%">Subtotal</th>
-                                                <th width="10%">Remove</th>
+                                                <th width="35%">Продукт</th>
+                                                <th width="15%">Цена за единицу товара</th>
+                                                <th width="25%">Количество</th>
+                                                <th width="15%">Итого</th>
+                                                <th width="10%">Удалить</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -148,9 +148,9 @@ const Cart = () => {
 
                             <div className="col-md-3">
                                 <div className="card border p-3 cartDetails">
-                                    <h4>CART TOTALS</h4>
+                                    <h4>ОБЩАЯ КОРЗИНА</h4>
                                     <div className="d-flex align-items-center mb-3">
-                                        <span>Subtotal</span>
+                                        <span>Итого</span>
                                         <span className="ml-auto text-red font-weight-bold">
                                             {
                                                 (context.cartData?.length !== 0 ?
@@ -159,15 +159,15 @@ const Cart = () => {
                                         </span>
                                     </div>
                                     <div className="d-flex align-items-center mb-3">
-                                        <span>Shipping</span>
-                                        <span className="ml-auto"><b>Free</b></span>
+                                        <span>Адрес доставки</span>
+                                        <span className="ml-auto"><b>С вами свяжутся на счет доставки</b></span>
                                     </div>
                                     <div className="d-flex align-items-center mb-3">
-                                        <span>Estimate for</span>
-                                        <span className="ml-auto"><b>United Kingdom</b></span>
+                                        {/* <span>Estimate for</span>
+                                        <span className="ml-auto"><b>United Kingdom</b></span> */}
                                     </div>
                                     <div className="d-flex align-items-center">
-                                        <span>Total</span>
+                                        <span>Общий</span>
                                         <span className="ml-auto text-red font-weight-bold">
                                             {
                                                 (context.cartData?.length !== 0 ?
@@ -178,7 +178,7 @@ const Cart = () => {
                                     <br />
                                     <Link href="/checkout">
                                         <Button className='btn-blue bg-red btn-lg btn-big'>
-                                            <IoBagCheckOutline /> &nbsp; Checkout
+                                            <IoBagCheckOutline /> &nbsp; Оформить
                                         </Button>
                                     </Link>
                                 </div>
@@ -187,11 +187,11 @@ const Cart = () => {
                         :
                         <div className="empty d-flex align-items-center justify-content-center flex-column">
                             <Image src={emprtCart} alt="image" width="150" height="150px" />
-                            <h3>Your Cart is currently empty</h3>
+                            <h3>Ваша корзина в настоящее время пуста</h3>
                             <br />
                             <Link href="/">
                                 <Button className='btn-blue bg-red btn-lg btn-big btn-round'>
-                                    <FaHome /> &nbsp; Continue Shopping
+                                    <FaHome /> &nbsp; Продолжить покупки
                                 </Button>
                             </Link>
                         </div>

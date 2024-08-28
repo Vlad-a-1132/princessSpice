@@ -88,20 +88,20 @@ const Sidebar = (props) => {
 
 
                 <div className="filterBox">
-                    <h6>FILTER BY PRICE</h6>
+                    <h6>ФИЛЬТР ПО ЦЕНЕ</h6>
 
                     <RangeSlider value={value} onInput={setValue} min={100} max={60000} step={5} />
 
 
                     <div className='d-flex pt-2 pb-2 priceRange'>
-                        <span>From: <strong className='text-white'>Rs: {value[0]}</strong></span>
-                        <span className='ml-auto'>From: <strong className='text-white'>Rs: {value[1]}</strong></span>
+                        <span>От: <strong className='text-white'>{/* Rs:*/} {value[0]}</strong></span>
+                        <span className='ml-auto'>До: <strong className='text-white'>{/* Rs:*/} {value[1]}</strong></span>
                     </div>
                 </div>
 
 
                 <div className="filterBox">
-                    <h6>FILTER BY RATING</h6>
+                    <h6>ФИЛЬТР ПО РЕЙТИНГУ</h6>
 
                     <div className='scroll pl-0'>
                         {

@@ -65,8 +65,8 @@ const MyList = () => {
                 <div className="container">
 
                     <div className="myListTableWrapper">
-                        <h2 className="hd mb-1">My List</h2>
-                        <p>There are <b className="text-red">{myListData?.length}</b> products in your My List</p>
+                        <h2 className="hd mb-1">Список желаний</h2>
+                        <p>В вашем списке желаний <b className="text-red">{myListData?.length}</b> продукта</p>
                         {
                             myListData?.length !== 0 ?
 
@@ -77,9 +77,10 @@ const MyList = () => {
                                             <table className="table">
                                                 <thead>
                                                     <tr>
-                                                        <th width="50%">Product</th>
-                                                        <th width="15%">Unit Price</th>
-                                                        <th width="10%">Remove</th>
+                                                        <th width="50%">Продукт</th>
+                                                        <th width="15%">
+                                                        Цена за единицу товара</th>
+                                                        <th width="10%">Удалить</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>

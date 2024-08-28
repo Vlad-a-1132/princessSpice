@@ -171,7 +171,7 @@ const Listing = ({ params }) => {
                                 </div>
 
                                 <div className="ml-auto showByFilter">
-                                    <Button onClick={handleClick}>Show 9 <FaAngleDown /></Button>
+                                    <Button onClick={handleClick}>Показать 9 <FaAngleDown /></Button>
                                     <Menu
                                         className="w-100 showPerPageDropdown"
                                         id="basic-menu"

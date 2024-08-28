@@ -1,6 +1,6 @@
 "use client"
-import banner1 from '../assets/images/banner1.jpg';
-import banner2 from '../assets/images/banner2.jpg';
+import banner1 from '../assets/images/banner1.svg';
+import banner2 from '../assets/images/banner2.svg';
 import Button from '@mui/material/Button';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React, { useContext, useEffect, useState } from "react";
@@ -190,9 +190,11 @@ export default function Home() {
 
 
               <div className="d-flex mt-4 mb-3 bannerSec">
-                <div className="banner">
-                  <Image src={banner3} className="cursor w-100" />
+                
+                  <div className="banner">
+                <Image src={banner3} className="cursor w-100" />
                 </div>
+              
 
                 <div className="banner">
                   <Image src={banner4} className="cursor w-100" />

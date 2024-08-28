@@ -158,7 +158,7 @@ const SignUp = () => {
 
 
 
-                        <a className="border-effect cursor txt">Forgot Password?</a>
+                        <a className="border-effect cursor txt">Забыли пароль?</a>
 
                         <div className="d-flex align-items-center mt-3 mb-3 ">
                             <div className="row w-100">
@@ -179,11 +179,11 @@ const SignUp = () => {
 
                         </div>
 
-                        <p className="txt">Not Registered? <Link href="/signIn" className="border-effect">Sign In</Link></p>
+                        <p className="txt">Не зарегистрированы? <Link href="/signIn" className="border-effect">Войти</Link></p>
 
-                        <h6 className="mt-4 text-center font-weight-bold">Or continue with social account</h6>
+                        <h6 className="mt-4 text-center font-weight-bold">Или продолжить с социальной учетной записью</h6>
 
-                        <Button className="loginWithGoogle mt-2" variant="outlined"><Image src={GoogleImg} /> Sign In with Google</Button>
+                        <Button className="loginWithGoogle mt-2" variant="outlined"><Image src={GoogleImg} /> Войти через Google</Button>
 
                     </form>
 

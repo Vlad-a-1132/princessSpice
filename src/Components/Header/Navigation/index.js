@@ -58,7 +58,7 @@ const Navigation = (props) => {
                     <div className={`col-sm-10 navPart2 d-flex align-items-center res-nav-wrapper ${isOpenNav===true ? 'open' : 'close'}`}>
                     <div className="res-nav-overlay" onClick={props.closeNav}></div>
                         <ul className='list list-inline ml-auto res-nav'>
-                            <li className='list-inline-item'  onClick={props.closeNav}><Link href="/"><Button>Home</Button></Link></li>
+                            <li className='list-inline-item'  onClick={props.closeNav}><Link href="/"><Button>Главная</Button></Link></li>
                             {
                                 props.navData?.filter((item, idx) => idx < 6).map((item,index)=>{
                                     return (

@@ -319,8 +319,8 @@ const MyAccount = () => {
                 <Box sx={{ width: '100%' }} className="myAccBox card border-0">
                     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                            <Tab label="Edit Profile" {...a11yProps(0)} />
-                            <Tab label="Change Password" {...a11yProps(1)} />
+                            <Tab label="Редактировать профиль" {...a11yProps(0)} />
+                            <Tab label="Изменить пароль" {...a11yProps(1)} />
                         </Tabs>
                     </Box>
                     <CustomTabPanel value={value} index={0}>
@@ -372,7 +372,7 @@ const MyAccount = () => {
                                     </div>
 
                                     <div className='form-group'>
-                                        <Button type="submit" className='btn-blue bg-red btn-lg btn-big'> Save</Button>
+                                        <Button type="submit" className='btn-blue bg-red btn-lg btn-big'> Сохранить</Button>
                                     </div>
 
 
@@ -414,7 +414,7 @@ const MyAccount = () => {
                                     </div>
 
                                     <div className='form-group'>
-                                        <Button type="submit" className='btn-blue bg-red btn-lg btn-big'> Save</Button>
+                                        <Button type="submit" className='btn-blue bg-red btn-lg btn-big'> Сохранить</Button>
                                     </div>
 
 

@@ -307,7 +307,7 @@
     max-height: 100vh;
     overflow-y: scroll;
     z-index: 10000;
-    background: #fff;
+    background: #000000;
     flex: 0 0 100% !important;
     padding: 25px;
     transition: all 0.3s ease-in-out;
@@ -337,7 +337,7 @@
     height: auto;
     padding: 15px;
     z-index: 10000;
-    background: #fff;
+    background: #000000;
     margin: auto !important;
   }
 

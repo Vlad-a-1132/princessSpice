@@ -50,7 +50,7 @@ const CountryDropdown = () => {
 
     return (
         <>
-            <Button className='countryDrop' onClick={() => {
+            {/* <Button className='countryDrop' onClick={() => {
                 setisOpenModal(true);
                 setcountryList(context.countryList);
             }}>
@@ -59,7 +59,7 @@ const CountryDropdown = () => {
                     <span className='name'>{context.selectedCountry !== "" ? context.selectedCountry.length > 10 ? context.selectedCountry?.substr(0, 10) + '...' : context.selectedCountry : 'Select Location'}</span>
                 </div>
                 <span className='ml-auto'><FaAngleDown /></span>
-            </Button>
+            </Button> */}
 
 
             <Dialog open={isOpenModal} onClose={() => setisOpenModal(false)} className='locationModal' TransitionComponent={Transition}>
