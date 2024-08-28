@@ -11,6 +11,8 @@ import Link from 'next/link';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 
+
+
 // import { useParams } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
 import { MyContext } from '@/context/ThemeContext';
@@ -159,7 +161,7 @@ const Sidebar = (props) => {
 
                 <br />
 
-                <Link href="/"><img src='https://klbtheme.com/bacola/wp-content/uploads/2021/05/sidebar-banner.gif' className='w-100' /></Link>
+                <Link href="/"><img src='/Group7.svg' className='w-100' /></Link>
 
             </div>
         </>
