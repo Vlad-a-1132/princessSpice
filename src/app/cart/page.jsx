@@ -107,20 +107,14 @@ const Cart = () => {
 
     return (
         <>
-            {
-            //<Modal
-            //    open={isInfoModalOpen}
-            //    onClose={setIsInfoModalOpen(false) && history.push("/checkout")}
-            //    aria-labelledby="parent-modal-title"
-            //    aria-describedby="parent-modal-description"
-            //>
-            //    <Box>
-            //        <h2>Обратите внимание!</h2>
-            //        <p></p>
-            //    </Box>
-            //</Modal>
-            }
-            <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)} content="На данный момент сервис не предоставляет возможности для автоматической обработки заказов, после отправки формы заказа с вами свяжутся представители компании. Приносим извинения за доставленные неудобства." title="Обратите внимание"/>
+            <Modal
+                open={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                content="На данный момент сервис не предоставляет возможности для автоматической обработки заказов, после отправки формы заказа с вами свяжутся представители компании. Приносим извинения за доставленные неудобства."
+                title="Обратите внимание"
+                confirmation
+                onConfirmation={() => history.push("/checkout")}
+            />
             <section className="section cartPage">
                 <div className="container">
                     <h2 className="hd mb-1">Ваша корзина</h2>

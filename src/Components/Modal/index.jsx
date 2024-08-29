@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Modal({open, onClose, content, title}) {
+export default function Modal({open, onClose, content, title, confirmation, onConfirmation}) {
 
     return (
         <div class="modal" id="globalFooterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style={{display: open ? "block" : "none"}}>
@@ -15,6 +15,11 @@ export default function Modal({open, onClose, content, title}) {
                     <div class="modal-body">
                         {content}
                     </div>
+                    { confirmation &&
+                        <div class="modal-footer">
+                            <button onClick={onConfirmation} type="button" class="btn btn-primary">Принять</button>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
