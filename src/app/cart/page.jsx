@@ -15,6 +15,9 @@ import { loadStripe } from '@stripe/stripe-js';
 import { useRouter } from 'next/navigation';
 import { deleteData, editData, fetchDataFromApi } from '@/utils/api';
 
+//import { Modal, Box } from '@mui/material';
+import Modal from './../../Components/Modal'
+
 const Cart = () => {
 
     const [cartData, setCartData] = useState([]);
@@ -27,6 +30,8 @@ const Cart = () => {
 
     const context = useContext(MyContext);
     const history = useRouter();
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -73,6 +78,14 @@ const Cart = () => {
         }
     }
 
+    const goToCheckout = () => {
+        // INFO: this is temporary code
+        setIsModalOpen(true)
+        // INFO_END
+
+        //history.push("/checkout")
+    }
+
     const removeItem = (id) => {
         setIsLoading(true);
         deleteData(`/api/cart/${id}`).then((res) => {
@@ -94,6 +107,14 @@ const Cart = () => {
 
     return (
         <>
+            <Modal
+                open={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                content="На данный момент сервис не предоставляет возможности для автоматической обработки заказов, после отправки формы заказа с вами свяжутся представители компании. Приносим извинения за доставленные неудобства."
+                title="Обратите внимание"
+                confirmation
+                onConfirmation={() => history.push("/checkout")}
+            />
             <section className="section cartPage">
                 <div className="container">
                     <h2 className="hd mb-1">Ваша корзина</h2>
@@ -158,10 +179,12 @@ const Cart = () => {
                                             }
                                         </span>
                                     </div>
+                                    {/*
                                     <div className="d-flex align-items-center mb-3">
                                         <span>Адрес доставки</span>
                                         <span className="ml-auto"><b>С вами свяжутся на счет доставки</b></span>
                                     </div>
+                                    */}
                                     <div className="d-flex align-items-center mb-3">
                                         {/* <span>Estimate for</span>
                                         <span className="ml-auto"><b>United Kingdom</b></span> */}
@@ -176,11 +199,9 @@ const Cart = () => {
                                         </span>
                                     </div>
                                     <br />
-                                    <Link href="/checkout">
-                                        <Button className='btn-blue bg-red btn-lg btn-big'>
-                                            <IoBagCheckOutline /> &nbsp; Оформить
-                                        </Button>
-                                    </Link>
+                                    <Button onClick={goToCheckout} className='btn-blue bg-red btn-lg btn-big'>
+                                        <IoBagCheckOutline /> &nbsp; Оформить
+                                    </Button>
                                 </div>
                             </div>
                         </div>
