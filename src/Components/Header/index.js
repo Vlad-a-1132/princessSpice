@@ -186,7 +186,7 @@ const Header = () => {
 
                                                         {
                                                             (context.cartData?.length !== 0 ?
-                                                                context.cartData?.map(item => parseInt(item.price) * item.quantity).reduce((total, value) => total + value, 0) : 0)?.toLocaleString('en-US', { style: 'currency', currency: 'INR' })
+                                                                context.cartData?.map(item => parseInt(item.price) * item.quantity).reduce((total, value) => total + value, 0) : 0) + "р"//?.toLocaleString('en-US', { style: 'currency', currency: 'RUB' })
                                                         }
                                                     </span>
                                                 }

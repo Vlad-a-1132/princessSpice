@@ -11,8 +11,9 @@ import { Navigation } from 'swiper/modules';
 import ProductItem from "@/Components/ProductItem";
 import HomeCat from "@/Components/HomeCat";
 
-import banner3 from '../assets/images/banner3.jpg';
-import banner4 from '../assets/images/banner4.jpg';
+import banner3 from '../assets/images/banner3.svg';
+import banner4 from '../assets/images/banner4.svg';
+import banner5 from '../assets/images/banner5.svg';
 
 import { MyContext } from "@/context/ThemeContext";
 import Tabs from '@mui/material/Tabs';
@@ -201,7 +202,7 @@ export default function Home() {
                 </div>
 
                 <div className="banner">
-                  <Image src={banner4} className="cursor w-100" />
+                  <Image src={banner5} className="cursor w-100" />
                 </div>
 
               </div>
