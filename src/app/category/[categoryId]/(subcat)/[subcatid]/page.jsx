@@ -235,7 +235,7 @@ const Listing = ({ params }) => {
                             <div className="col">
                                 <Button className='btn-blue bg-red btn-lg btn-big' onClick={openFilters}>
                                     <FaFilter />
-                                    {isOpenFilter === true ? 'Close Filters' : 'Open Filters'}
+                                    {isOpenFilter === true ? 'Закрыть Фильтры' : 'Открыть Фильтры'}
 
                                 </Button>
                             </div>
