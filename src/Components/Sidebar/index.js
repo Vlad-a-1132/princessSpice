@@ -65,7 +65,7 @@ const Sidebar = (props) => {
         <>
             <div className={`sidebar ${isOpenFilter===true && 'open'}`}>
                 <div className="filterBox">
-                    <h6>PRODUCT CATEGORIES</h6>
+                    <h6>КАТЕГОРИИ ПРОДУКТОВ</h6>
 
                     <div className='scroll'>
                         <RadioGroup
